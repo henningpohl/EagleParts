@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -152,6 +152,44 @@
 <text x="24.13" y="-17.78" size="1.27" layer="21">20</text>
 <text x="-25.4" y="-17.78" size="1.27" layer="21">1</text>
 </package>
+<package name="MMA7361LC">
+<wire x1="-1.5" y1="-2.5" x2="1.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-2.5" x2="1.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="2.5" x2="-1.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="2.5" x2="-1.5" y2="-2.5" width="0.127" layer="21"/>
+<smd name="P$6" x="-1" y="-2" dx="0.8" dy="0.5" layer="1"/>
+<smd name="P$5" x="-1" y="-1.2" dx="0.8" dy="0.5" layer="1"/>
+<smd name="P$4" x="-1" y="-0.4" dx="0.8" dy="0.5" layer="1"/>
+<smd name="P$3" x="-1" y="0.4" dx="0.8" dy="0.5" layer="1"/>
+<smd name="P$2" x="-1" y="1.2" dx="0.8" dy="0.5" layer="1"/>
+<smd name="P$1" x="-1" y="2" dx="0.8" dy="0.5" layer="1"/>
+<smd name="P$13" x="1" y="2" dx="0.8" dy="0.5" layer="1"/>
+<smd name="P$12" x="1" y="1.2" dx="0.8" dy="0.5" layer="1"/>
+<smd name="P$11" x="1" y="0.4" dx="0.8" dy="0.5" layer="1"/>
+<smd name="P$10" x="1" y="-0.4" dx="0.8" dy="0.5" layer="1"/>
+<smd name="P$9" x="1" y="-1.2" dx="0.8" dy="0.5" layer="1"/>
+<smd name="P$8" x="1" y="-2" dx="0.8" dy="0.5" layer="1"/>
+<smd name="P$7" x="0" y="-2" dx="0.8" dy="0.5" layer="1" rot="R90"/>
+<smd name="P$14" x="0" y="2" dx="0.8" dy="0.5" layer="1" rot="R90"/>
+<rectangle x1="-1.5" y1="2.3" x2="-1.3" y2="2.5" layer="21"/>
+<text x="0.2" y="-0.3" size="0.4064" layer="25" rot="R90">$U</text>
+</package>
+<package name="MMA7361L-BREAKOUT">
+<pad name="P$GND@1" x="3.81" y="5.08" drill="0.8" shape="square"/>
+<pad name="P$GND@2" x="3.81" y="-5.08" drill="0.8" shape="square"/>
+<pad name="P$Z" x="3.81" y="2.54" drill="0.8"/>
+<pad name="P$Y" x="3.81" y="0" drill="0.8"/>
+<pad name="P$X" x="3.81" y="-2.54" drill="0.8"/>
+<pad name="P$0G" x="-3.81" y="5.08" drill="0.8"/>
+<pad name="P$SLEEP" x="-3.81" y="2.54" drill="0.8"/>
+<pad name="P$GSELECT" x="-3.81" y="0" drill="0.8"/>
+<pad name="P$TEST" x="-3.81" y="-2.54" drill="0.8"/>
+<pad name="P$VDD" x="-3.81" y="-5.08" drill="0.8"/>
+<wire x1="-5.08" y1="6.35" x2="-5.08" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-6.35" x2="5.08" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-6.35" x2="5.08" y2="6.35" width="0.127" layer="21"/>
+<wire x1="5.08" y1="6.35" x2="-5.08" y2="6.35" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MTCH6301">
@@ -212,34 +250,49 @@
 <text x="2.54" y="-10.16" size="2.54" layer="96" align="center">&gt;NAME</text>
 </symbol>
 <symbol name="EA_DOGM132-5">
-<pin name="VDD" x="-40.64" y="12.7" length="middle" direction="pwr" rot="R180"/>
-<pin name="VDD2" x="-40.64" y="10.16" length="middle" direction="pwr" rot="R180"/>
-<pin name="VOUT" x="-40.64" y="7.62" length="middle" direction="pwr" rot="R180"/>
-<pin name="V4" x="-40.64" y="2.54" length="middle" direction="out" rot="R180"/>
-<pin name="V3" x="-40.64" y="0" length="middle" direction="out" rot="R180"/>
-<pin name="V2" x="-40.64" y="-2.54" length="middle" direction="out" rot="R180"/>
-<pin name="V1" x="-40.64" y="-5.08" length="middle" direction="out" rot="R180"/>
-<pin name="V0" x="-40.64" y="-7.62" length="middle" direction="out" rot="R180"/>
-<pin name="SI" x="-30.48" y="-10.16" length="middle" direction="in" rot="R270"/>
-<pin name="CLK" x="-27.94" y="-10.16" length="middle" direction="in" rot="R270"/>
-<pin name="A0" x="-25.4" y="-10.16" length="middle" direction="in" rot="R270"/>
-<pin name="CS" x="-22.86" y="-10.16" length="middle" direction="in" rot="R270"/>
-<pin name="RST" x="-12.7" y="-10.16" length="middle" direction="in" rot="R270"/>
-<pin name="CAP3P" x="-2.54" y="12.7" length="middle" direction="out"/>
-<pin name="CAP1N" x="-2.54" y="10.16" length="middle" direction="in"/>
-<pin name="CAP1P" x="-2.54" y="7.62" length="middle" direction="out"/>
-<pin name="CAP2P" x="-2.54" y="2.54" length="middle" direction="out"/>
-<pin name="CAP2N" x="-2.54" y="0" length="middle" direction="in"/>
-<pin name="VSS1" x="-2.54" y="-5.08" length="middle" direction="sup"/>
-<pin name="VSS2" x="-2.54" y="-7.62" length="middle" direction="sup"/>
+<pin name="VDD" x="-45.72" y="12.7" length="middle" direction="pwr"/>
+<pin name="VDD2" x="-45.72" y="10.16" length="middle" direction="pwr"/>
+<pin name="VOUT" x="-45.72" y="7.62" length="middle" direction="pwr"/>
+<pin name="V4" x="-45.72" y="2.54" length="middle" direction="out"/>
+<pin name="V3" x="-45.72" y="0" length="middle" direction="out"/>
+<pin name="V2" x="-45.72" y="-2.54" length="middle" direction="out"/>
+<pin name="V1" x="-45.72" y="-5.08" length="middle" direction="out"/>
+<pin name="V0" x="-45.72" y="-7.62" length="middle" direction="out"/>
+<pin name="SI" x="-30.48" y="-15.24" length="middle" direction="in" rot="R90"/>
+<pin name="CLK" x="-27.94" y="-15.24" length="middle" direction="in" rot="R90"/>
+<pin name="A0" x="-25.4" y="-15.24" length="middle" direction="in" rot="R90"/>
+<pin name="CS" x="-22.86" y="-15.24" length="middle" direction="in" rot="R90"/>
+<pin name="RST" x="-12.7" y="-15.24" length="middle" direction="in" rot="R90"/>
+<pin name="CAP3P" x="2.54" y="12.7" length="middle" direction="out" rot="R180"/>
+<pin name="CAP1N" x="2.54" y="10.16" length="middle" direction="in" rot="R180"/>
+<pin name="CAP1P" x="2.54" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="CAP2P" x="2.54" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="CAP2N" x="2.54" y="0" length="middle" direction="in" rot="R180"/>
+<pin name="VSS1" x="2.54" y="-5.08" length="middle" direction="sup" rot="R180"/>
+<pin name="VSS2" x="2.54" y="-7.62" length="middle" direction="sup" rot="R180"/>
 <wire x1="-40.64" y1="15.24" x2="-40.64" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-40.64" y1="-10.16" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-10.16" x2="-2.54" y2="15.24" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="15.24" x2="-40.64" y2="15.24" width="0.254" layer="94"/>
-<pin name="A1" x="-30.48" y="15.24" length="middle" direction="pwr" rot="R90"/>
-<pin name="A2" x="-27.94" y="15.24" length="middle" direction="pwr" rot="R90"/>
-<pin name="C1" x="-17.78" y="15.24" length="middle" direction="sup" rot="R90"/>
-<pin name="C2" x="-15.24" y="15.24" length="middle" direction="sup" rot="R90"/>
+<pin name="A1" x="-30.48" y="20.32" length="middle" direction="pwr" rot="R270"/>
+<pin name="A2" x="-27.94" y="20.32" length="middle" direction="pwr" rot="R270"/>
+<pin name="C1" x="-17.78" y="20.32" length="middle" direction="sup" rot="R270"/>
+<pin name="C2" x="-15.24" y="20.32" length="middle" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="MMA7361">
+<pin name="X_OUT" x="-17.78" y="5.08" length="middle" direction="out"/>
+<pin name="Y_OUT" x="-17.78" y="2.54" length="middle" direction="out"/>
+<pin name="Z_OUT" x="-17.78" y="0" length="middle" direction="out"/>
+<pin name="VSS" x="-17.78" y="-2.54" length="middle" direction="pwr"/>
+<pin name="VDD" x="-17.78" y="-5.08" length="middle" direction="pwr"/>
+<pin name="SELF_TEST" x="20.32" y="5.08" length="middle" direction="in" rot="R180"/>
+<pin name="G-SELECT" x="20.32" y="2.54" length="middle" direction="in" rot="R180"/>
+<pin name="0G-DETECT" x="20.32" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="!SLEEP" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="15.24" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-7.62" x2="15.24" y2="7.62" width="0.254" layer="94"/>
+<wire x1="15.24" y1="7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -337,6 +390,49 @@ http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en559101</description
 <connect gate="G$1" pin="VOUT" pad="P$32"/>
 <connect gate="G$1" pin="VSS1" pad="P$26"/>
 <connect gate="G$1" pin="VSS2" pad="P$33"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MMA7361L">
+<description>MMA7361LC 3-Axis Accelerometer ±1.5/6g
+
+http://www.pololu.com/product/1246/resources
+http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=MMA7361LC&amp;fsrch=1&amp;sr=2&amp;pageNum=1</description>
+<gates>
+<gate name="G$1" symbol="MMA7361" x="0" y="0"/>
+</gates>
+<devices>
+<device name="BREAKOUT" package="MMA7361L-BREAKOUT">
+<connects>
+<connect gate="G$1" pin="!SLEEP" pad="P$SLEEP"/>
+<connect gate="G$1" pin="0G-DETECT" pad="P$0G"/>
+<connect gate="G$1" pin="G-SELECT" pad="P$GSELECT"/>
+<connect gate="G$1" pin="SELF_TEST" pad="P$TEST"/>
+<connect gate="G$1" pin="VDD" pad="P$VDD"/>
+<connect gate="G$1" pin="VSS" pad="P$GND@1 P$GND@2"/>
+<connect gate="G$1" pin="X_OUT" pad="P$X"/>
+<connect gate="G$1" pin="Y_OUT" pad="P$Y"/>
+<connect gate="G$1" pin="Z_OUT" pad="P$Z"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD" package="MMA7361LC">
+<connects>
+<connect gate="G$1" pin="!SLEEP" pad="P$7"/>
+<connect gate="G$1" pin="0G-DETECT" pad="P$9"/>
+<connect gate="G$1" pin="G-SELECT" pad="P$10"/>
+<connect gate="G$1" pin="SELF_TEST" pad="P$13"/>
+<connect gate="G$1" pin="VDD" pad="P$6"/>
+<connect gate="G$1" pin="VSS" pad="P$5"/>
+<connect gate="G$1" pin="X_OUT" pad="P$2"/>
+<connect gate="G$1" pin="Y_OUT" pad="P$3"/>
+<connect gate="G$1" pin="Z_OUT" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
