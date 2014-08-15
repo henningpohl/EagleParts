@@ -7,3 +7,4 @@ Currently includes:
 - [MTCH6301-TQFP](http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en559101)
 - [MMA7361LC](http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=MMA7361LC)
 - [RN4020](http://www.microchip.com/wwwproducts/Devices.aspx?product=RN4020)
+- [MPXx5050](http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=MPXx5050)
