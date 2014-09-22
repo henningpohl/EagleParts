@@ -22,7 +22,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -257,6 +257,80 @@
 <smd name="P$8" x="-15.24" y="-7.62" dx="2.54" dy="1.27" layer="1"/>
 <circle x="0" y="0" radius="11.279428125" width="0.127" layer="20"/>
 </package>
+<package name="MMA8652FC">
+<rectangle x1="0" y1="0" x2="0.725" y2="1.95" layer="29"/>
+<rectangle x1="1.8" y1="0" x2="2.525" y2="1.95" layer="29"/>
+<smd name="P$1" x="0.3625" y="1.755" dx="0.6" dy="0.225" layer="1" stop="no"/>
+<smd name="P$2" x="0.3625" y="1.365" dx="0.6" dy="0.225" layer="1" stop="no"/>
+<smd name="P$3" x="0.3625" y="0.975" dx="0.6" dy="0.225" layer="1" stop="no"/>
+<smd name="P$4" x="0.3625" y="0.585" dx="0.6" dy="0.225" layer="1" stop="no"/>
+<smd name="P$5" x="0.3625" y="0.195" dx="0.6" dy="0.225" layer="1" stop="no"/>
+<smd name="P$6" x="2.1625" y="0.195" dx="0.6" dy="0.225" layer="1" stop="no"/>
+<smd name="P$7" x="2.1625" y="0.585" dx="0.6" dy="0.225" layer="1" stop="no"/>
+<smd name="P$8" x="2.1625" y="0.975" dx="0.6" dy="0.225" layer="1" stop="no"/>
+<smd name="P$9" x="2.1625" y="1.365" dx="0.6" dy="0.225" layer="1" stop="no"/>
+<smd name="P$10" x="2.1625" y="1.755" dx="0.6" dy="0.225" layer="1" stop="no"/>
+<wire x1="2.275" y1="1.975" x2="2.275" y2="-0.025" width="0.01" layer="21"/>
+<wire x1="2.275" y1="-0.025" x2="0.275" y2="-0.025" width="0.01" layer="21"/>
+<wire x1="0.275" y1="-0.025" x2="0.275" y2="1.975" width="0.01" layer="21"/>
+<wire x1="0.275" y1="1.975" x2="2.275" y2="1.975" width="0.01" layer="21"/>
+<text x="0.825" y="0.6" size="0.18" layer="27">&gt;Value</text>
+<text x="0.875" y="1.1" size="0.18" layer="25">&gt;Name</text>
+</package>
+<package name="NRF24AP2">
+<wire x1="-2.5" y1="2.5" x2="-2.5" y2="-2.5" width="0.127" layer="20"/>
+<wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.127" layer="20"/>
+<wire x1="2.5" y1="-2.5" x2="2.5" y2="2.5" width="0.127" layer="20"/>
+<wire x1="2.5" y1="2.5" x2="-2.5" y2="2.5" width="0.127" layer="20"/>
+<wire x1="-2.5" y1="2.5" x2="-2.5" y2="-2.5" width="0.1" layer="21"/>
+<wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.1" layer="21"/>
+<wire x1="2.5" y1="-2.5" x2="2.5" y2="2.5" width="0.1" layer="21"/>
+<wire x1="2.5" y1="2.5" x2="-2.5" y2="2.5" width="0.1" layer="21"/>
+<circle x="-2.5" y="2.5" radius="0.15" width="0.127" layer="21"/>
+<smd name="P$1" x="-2.3" y="1.75" dx="0.5" dy="0.33" layer="1"/>
+<smd name="P$2" x="-2.3" y="1.25" dx="0.5" dy="0.33" layer="1"/>
+<smd name="P$3" x="-2.3" y="0.75" dx="0.5" dy="0.33" layer="1"/>
+<smd name="P$4" x="-2.3" y="0.25" dx="0.5" dy="0.33" layer="1"/>
+<smd name="P$5" x="-2.3" y="-0.25" dx="0.5" dy="0.33" layer="1"/>
+<smd name="P$6" x="-2.3" y="-0.75" dx="0.5" dy="0.33" layer="1"/>
+<smd name="P$7" x="-2.3" y="-1.25" dx="0.5" dy="0.33" layer="1"/>
+<smd name="P$8" x="-2.3" y="-1.75" dx="0.5" dy="0.33" layer="1"/>
+<smd name="P$9" x="-1.75" y="-2.3" dx="0.5" dy="0.33" layer="1" rot="R90"/>
+<smd name="P$10" x="-1.25" y="-2.3" dx="0.5" dy="0.33" layer="1" rot="R90"/>
+<smd name="P$11" x="-0.75" y="-2.3" dx="0.5" dy="0.33" layer="1" rot="R90"/>
+<smd name="P$12" x="-0.25" y="-2.3" dx="0.5" dy="0.33" layer="1" rot="R90"/>
+<smd name="P$13" x="0.25" y="-2.3" dx="0.5" dy="0.33" layer="1" rot="R90"/>
+<smd name="P$14" x="0.75" y="-2.3" dx="0.5" dy="0.33" layer="1" rot="R90"/>
+<smd name="P$15" x="1.25" y="-2.3" dx="0.5" dy="0.33" layer="1" rot="R90"/>
+<smd name="P$16" x="1.75" y="-2.3" dx="0.5" dy="0.33" layer="1" rot="R90"/>
+<smd name="P$17" x="2.3" y="-1.75" dx="0.5" dy="0.33" layer="1" rot="R180"/>
+<smd name="P$18" x="2.3" y="-1.25" dx="0.5" dy="0.33" layer="1" rot="R180"/>
+<smd name="P$19" x="2.3" y="-0.75" dx="0.5" dy="0.33" layer="1" rot="R180"/>
+<smd name="P$20" x="2.3" y="-0.25" dx="0.5" dy="0.33" layer="1" rot="R180"/>
+<smd name="P$21" x="2.3" y="0.25" dx="0.5" dy="0.33" layer="1" rot="R180"/>
+<smd name="P$22" x="2.3" y="0.75" dx="0.5" dy="0.33" layer="1" rot="R180"/>
+<smd name="P$23" x="2.3" y="1.25" dx="0.5" dy="0.33" layer="1" rot="R180"/>
+<smd name="P$24" x="2.3" y="1.75" dx="0.5" dy="0.33" layer="1" rot="R180"/>
+<smd name="P$25" x="1.75" y="2.3" dx="0.5" dy="0.33" layer="1" rot="R270"/>
+<smd name="P$26" x="1.25" y="2.3" dx="0.5" dy="0.33" layer="1" rot="R270"/>
+<smd name="P$27" x="0.75" y="2.3" dx="0.5" dy="0.33" layer="1" rot="R270"/>
+<smd name="P$28" x="0.25" y="2.3" dx="0.5" dy="0.33" layer="1" rot="R270"/>
+<smd name="P$29" x="-0.25" y="2.3" dx="0.5" dy="0.33" layer="1" rot="R270"/>
+<smd name="P$30" x="-0.75" y="2.3" dx="0.5" dy="0.33" layer="1" rot="R270"/>
+<smd name="P$31" x="-1.25" y="2.3" dx="0.5" dy="0.33" layer="1" rot="R270"/>
+<smd name="P$32" x="-1.75" y="2.3" dx="0.5" dy="0.33" layer="1" rot="R270"/>
+<smd name="P$33" x="0" y="0" dx="3.1" dy="3.1" layer="1"/>
+<pad name="P$34" x="-1" y="-1" drill="0.2" stop="no" thermals="no"/>
+<pad name="P$35" x="-1" y="0" drill="0.2" stop="no" thermals="no"/>
+<pad name="P$36" x="-1" y="1" drill="0.2" stop="no" thermals="no"/>
+<pad name="P$37" x="0" y="1" drill="0.2" stop="no" thermals="no"/>
+<pad name="P$38" x="1" y="1" drill="0.2" stop="no" thermals="no"/>
+<pad name="P$39" x="0" y="0" drill="0.2" stop="no" thermals="no"/>
+<pad name="P$40" x="1" y="0" drill="0.2" stop="no" thermals="no"/>
+<pad name="P$41" x="1" y="-1" drill="0.2" stop="no" thermals="no"/>
+<pad name="P$42" x="0" y="-1" drill="0.2" stop="no" thermals="no"/>
+<text x="4" y="-2.1" size="1.016" layer="21" rot="R90">&gt;Name</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MTCH6301">
@@ -401,6 +475,62 @@
 <wire x1="-7.62" y1="5.08" x2="-7.62" y2="20.32" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="20.32" x2="-22.86" y2="20.32" width="0.254" layer="94"/>
 <text x="-21.59" y="15.24" size="1.778" layer="94">MPXV5050</text>
+</symbol>
+<symbol name="MMA8652FC">
+<pin name="VDD" x="-15.24" y="2.54" length="middle" direction="pwr"/>
+<pin name="SCL" x="-15.24" y="0" length="middle"/>
+<pin name="INT1" x="-15.24" y="-2.54" length="middle" direction="out"/>
+<pin name="BYP" x="-15.24" y="-5.08" length="middle" direction="out"/>
+<pin name="INT2" x="-15.24" y="-7.62" length="middle" direction="out"/>
+<pin name="GND@3" x="15.24" y="-7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND@2" x="15.24" y="-5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="VDDIO" x="15.24" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND@1" x="15.24" y="0" length="middle" direction="pwr" rot="R180"/>
+<pin name="SDA" x="15.24" y="2.54" length="middle" rot="R180"/>
+<text x="-7.112" y="6.604" size="1.778" layer="94">MMA8652FC</text>
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+</symbol>
+<symbol name="NRF24AP2">
+<pin name="XC32K1" x="-33.02" y="10.16" length="middle" direction="in"/>
+<pin name="VDD@1" x="-33.02" y="7.62" length="middle" direction="pwr"/>
+<pin name="DEC1" x="-33.02" y="5.08" length="middle" direction="pwr"/>
+<pin name="DEC2" x="-33.02" y="2.54" length="middle" direction="pwr"/>
+<pin name="PORTSEL" x="-33.02" y="0" length="middle" direction="in"/>
+<pin name="VSS@1" x="-33.02" y="-2.54" length="middle" direction="pwr"/>
+<pin name="UART_TX" x="-33.02" y="-5.08" length="middle"/>
+<pin name="VSS@2" x="-33.02" y="-7.62" length="middle" direction="pwr"/>
+<pin name="VDD@2" x="-10.16" y="-22.86" length="middle" direction="pwr" rot="R90"/>
+<pin name="UART_RX" x="-7.62" y="-22.86" length="middle" direction="in" rot="R90"/>
+<pin name="VSS@3" x="-5.08" y="-22.86" length="middle" direction="pwr" rot="R90"/>
+<pin name="!SUSPEND!/!SRDY!" x="-2.54" y="-22.86" length="middle" direction="in" rot="R90"/>
+<pin name="VSS@4" x="0" y="-22.86" length="middle" direction="pwr" rot="R90"/>
+<pin name="BR3" x="2.54" y="-22.86" length="middle" direction="in" rot="R90"/>
+<pin name="BR1/SFLOW" x="5.08" y="-22.86" length="middle" direction="in" rot="R90"/>
+<pin name="SLEEP/!MRDY" x="7.62" y="-22.86" length="middle" direction="in" rot="R90"/>
+<pin name="RTS/!SEN" x="30.48" y="-7.62" length="middle" direction="out" rot="R180"/>
+<pin name="BR2/SCLK" x="30.48" y="-5.08" length="middle" rot="R180"/>
+<pin name="!RESET" x="30.48" y="-2.54" length="middle" direction="in" rot="R180"/>
+<pin name="VDD_PA" x="30.48" y="0" length="middle" direction="pwr" rot="R180"/>
+<pin name="ANT1" x="30.48" y="2.54" length="middle" rot="R180"/>
+<pin name="ANT2" x="30.48" y="5.08" length="middle" rot="R180"/>
+<pin name="VSS@5" x="30.48" y="7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="VDD@3" x="30.48" y="10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="IREF" x="7.62" y="25.4" length="middle" direction="out" rot="R270"/>
+<pin name="VSS@6" x="5.08" y="25.4" length="middle" direction="pwr" rot="R270"/>
+<pin name="VDD@4" x="2.54" y="25.4" length="middle" direction="pwr" rot="R270"/>
+<pin name="SOUT" x="0" y="25.4" length="middle" rot="R270"/>
+<pin name="SIN" x="-2.54" y="25.4" length="middle" direction="in" rot="R270"/>
+<pin name="XC2" x="-5.08" y="25.4" length="middle" direction="out" rot="R270"/>
+<pin name="XC1" x="-7.62" y="25.4" length="middle" direction="in" rot="R270"/>
+<pin name="XC32K2" x="-10.16" y="25.4" length="middle" direction="out" rot="R270"/>
+<wire x1="-27.94" y1="20.32" x2="-27.94" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-27.94" y1="-17.78" x2="25.4" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-17.78" x2="25.4" y2="20.32" width="0.254" layer="94"/>
+<wire x1="25.4" y1="20.32" x2="-27.94" y2="20.32" width="0.254" layer="94"/>
+<text x="-6.35" y="4.572" size="1.778" layer="94">nRF24AP2</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -600,6 +730,76 @@ http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=MMA7361LC&amp;fsr
 <connect gate="G$1" pin="GND" pad="P$3"/>
 <connect gate="G$1" pin="VSS" pad="P$2"/>
 <connect gate="G$1" pin="V_OUT" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MMA8652FC">
+<gates>
+<gate name="G$1" symbol="MMA8652FC" x="5.08" y="-7.62"/>
+</gates>
+<devices>
+<device name="" package="MMA8652FC">
+<connects>
+<connect gate="G$1" pin="BYP" pad="P$4"/>
+<connect gate="G$1" pin="GND@1" pad="P$6"/>
+<connect gate="G$1" pin="GND@2" pad="P$7"/>
+<connect gate="G$1" pin="GND@3" pad="P$9"/>
+<connect gate="G$1" pin="INT1" pad="P$3"/>
+<connect gate="G$1" pin="INT2" pad="P$5"/>
+<connect gate="G$1" pin="SCL" pad="P$2"/>
+<connect gate="G$1" pin="SDA" pad="P$10"/>
+<connect gate="G$1" pin="VDD" pad="P$1"/>
+<connect gate="G$1" pin="VDDIO" pad="P$8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NRF24AP2">
+<gates>
+<gate name="G$1" symbol="NRF24AP2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="NRF24AP2">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="P$19"/>
+<connect gate="G$1" pin="!SUSPEND!/!SRDY!" pad="P$12"/>
+<connect gate="G$1" pin="ANT1" pad="P$21"/>
+<connect gate="G$1" pin="ANT2" pad="P$22"/>
+<connect gate="G$1" pin="BR1/SFLOW" pad="P$15"/>
+<connect gate="G$1" pin="BR2/SCLK" pad="P$18"/>
+<connect gate="G$1" pin="BR3" pad="P$14"/>
+<connect gate="G$1" pin="DEC1" pad="P$3"/>
+<connect gate="G$1" pin="DEC2" pad="P$4"/>
+<connect gate="G$1" pin="IREF" pad="P$25"/>
+<connect gate="G$1" pin="PORTSEL" pad="P$5"/>
+<connect gate="G$1" pin="RTS/!SEN" pad="P$17"/>
+<connect gate="G$1" pin="SIN" pad="P$29"/>
+<connect gate="G$1" pin="SLEEP/!MRDY" pad="P$16"/>
+<connect gate="G$1" pin="SOUT" pad="P$28"/>
+<connect gate="G$1" pin="UART_RX" pad="P$10"/>
+<connect gate="G$1" pin="UART_TX" pad="P$7"/>
+<connect gate="G$1" pin="VDD@1" pad="P$2"/>
+<connect gate="G$1" pin="VDD@2" pad="P$9"/>
+<connect gate="G$1" pin="VDD@3" pad="P$24"/>
+<connect gate="G$1" pin="VDD@4" pad="P$27"/>
+<connect gate="G$1" pin="VDD_PA" pad="P$20"/>
+<connect gate="G$1" pin="VSS@1" pad="P$6 P$33 P$34 P$35 P$36 P$37 P$38 P$39 P$40 P$41 P$42"/>
+<connect gate="G$1" pin="VSS@2" pad="P$8"/>
+<connect gate="G$1" pin="VSS@3" pad="P$11"/>
+<connect gate="G$1" pin="VSS@4" pad="P$13"/>
+<connect gate="G$1" pin="VSS@5" pad="P$23"/>
+<connect gate="G$1" pin="VSS@6" pad="P$26"/>
+<connect gate="G$1" pin="XC1" pad="P$31"/>
+<connect gate="G$1" pin="XC2" pad="P$30"/>
+<connect gate="G$1" pin="XC32K1" pad="P$1"/>
+<connect gate="G$1" pin="XC32K2" pad="P$32"/>
 </connects>
 <technologies>
 <technology name=""/>
