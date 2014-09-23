@@ -8,3 +8,5 @@ Currently includes:
 - [MMA7361LC](http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=MMA7361LC)
 - [RN4020](http://www.microchip.com/wwwproducts/Devices.aspx?product=RN4020)
 - [MPXx5050](http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=MPXx5050)
+- [MMA8652FC](http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=MMA8652FC)
+- [NRF24AP2](http://www.nordicsemi.com/eng/Products/ANT/nRF24AP2-8CH)
