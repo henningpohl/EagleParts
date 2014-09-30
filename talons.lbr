@@ -24,7 +24,7 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -43,7 +43,7 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -372,11 +372,35 @@
 <smd name="P$38" x="-1.25" y="2.95" dx="0.85" dy="0.28" layer="1" roundness="90" rot="R90"/>
 <smd name="P$39" x="-1.75" y="2.95" dx="0.85" dy="0.28" layer="1" roundness="90" rot="R90"/>
 <smd name="P$40" x="-2.25" y="2.95" dx="0.85" dy="0.28" layer="1" roundness="90" rot="R90"/>
-<smd name="P$41" x="0" y="0" dx="4.5" dy="4.5" layer="1"/>
-<wire x1="-3.4" y1="3.4" x2="3.4" y2="3.4" width="0.01" layer="20"/>
-<wire x1="3.4" y1="3.4" x2="3.4" y2="-3.4" width="0.01" layer="20"/>
-<wire x1="3.4" y1="-3.4" x2="-3.4" y2="-3.4" width="0.01" layer="20"/>
-<wire x1="-3.4" y1="-3.4" x2="-3.4" y2="3.4" width="0.01" layer="20"/>
+<wire x1="-3.4" y1="3.4" x2="3.4" y2="3.4" width="0.01" layer="51"/>
+<wire x1="3.4" y1="3.4" x2="3.4" y2="-3.4" width="0.01" layer="51"/>
+<wire x1="3.4" y1="-3.4" x2="-3.4" y2="-3.4" width="0.01" layer="51"/>
+<wire x1="-3.4" y1="-3.4" x2="-3.4" y2="3.4" width="0.01" layer="51"/>
+<pad name="P$41" x="-0.5" y="0.5" drill="0.3" diameter="1.25" shape="square"/>
+<pad name="P$42" x="0.5" y="0.5" drill="0.3" diameter="1.25" shape="square"/>
+<pad name="P$43" x="0.5" y="-0.5" drill="0.3" diameter="1.25" shape="square"/>
+<pad name="P$44" x="-0.5" y="-0.5" drill="0.3" diameter="1.25" shape="square"/>
+<pad name="P$45" x="-1.5" y="-0.5" drill="0.3" diameter="1.25" shape="square"/>
+<pad name="P$46" x="-1.5" y="0.5" drill="0.3" diameter="1.25" shape="square"/>
+<pad name="P$47" x="-1.5" y="1.5" drill="0.3" diameter="1.25" shape="square"/>
+<pad name="P$48" x="-0.5" y="1.5" drill="0.3" diameter="1.25" shape="square"/>
+<pad name="P$49" x="0.5" y="1.5" drill="0.3" diameter="1.25" shape="square"/>
+<pad name="P$50" x="1.5" y="1.5" drill="0.3" diameter="1.25" shape="square"/>
+<pad name="P$51" x="1.5" y="0.5" drill="0.3" diameter="1.25" shape="square"/>
+<pad name="P$52" x="1.5" y="-0.5" drill="0.3" diameter="1.25" shape="square"/>
+<pad name="P$53" x="1.5" y="-1.5" drill="0.3" diameter="1.25" shape="square"/>
+<pad name="P$54" x="0.5" y="-1.5" drill="0.3" diameter="1.25" shape="square"/>
+<pad name="P$55" x="-0.5" y="-1.5" drill="0.3" diameter="1.25" shape="square"/>
+<pad name="P$56" x="-1.5" y="-1.5" drill="0.3" diameter="1.25" shape="square"/>
+<wire x1="-3.4" y1="2.9" x2="-3.4" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-3.4" y1="3.4" x2="-2.9" y2="3.4" width="0.127" layer="21"/>
+<wire x1="2.9" y1="3.4" x2="3.4" y2="3.4" width="0.127" layer="21"/>
+<wire x1="3.4" y1="3.4" x2="3.4" y2="2.9" width="0.127" layer="21"/>
+<wire x1="3.4" y1="-2.9" x2="3.4" y2="-3.4" width="0.127" layer="21"/>
+<wire x1="3.4" y1="-3.4" x2="2.9" y2="-3.4" width="0.127" layer="21"/>
+<wire x1="-2.9" y1="-3.4" x2="-3.4" y2="-3.4" width="0.127" layer="21"/>
+<wire x1="-3.4" y1="-3.4" x2="-3.4" y2="-2.9" width="0.127" layer="21"/>
+<circle x="-3.1" y="3.1" radius="0.1" width="0.2" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -933,7 +957,7 @@ The CC2541 comes in two different versions: CC2541F128/F256, with 128 KB and 256
 <connect gate="G$1" pin="DCOUPL" pad="P$40"/>
 <connect gate="G$1" pin="DVDD1" pad="P$39"/>
 <connect gate="G$1" pin="DVDD2" pad="P$10"/>
-<connect gate="G$1" pin="GND" pad="P$1 P$41"/>
+<connect gate="G$1" pin="GND" pad="P$1 P$41 P$42 P$43 P$44 P$45 P$46 P$47 P$48 P$49 P$50 P$51 P$52 P$53 P$54 P$55 P$56"/>
 <connect gate="G$1" pin="NC" pad="P$4"/>
 <connect gate="G$1" pin="P0_0" pad="P$19"/>
 <connect gate="G$1" pin="P0_1" pad="P$18"/>
