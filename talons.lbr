@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.02" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -422,6 +422,19 @@
 <wire x1="-13.97" y1="-1.27" x2="13.97" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="13.97" y1="-1.27" x2="13.97" y2="1.27" width="0.127" layer="21"/>
 <wire x1="13.97" y1="1.27" x2="-13.97" y2="1.27" width="0.127" layer="21"/>
+</package>
+<package name="TSOT23-6">
+<wire x1="-1.45" y1="-0.8" x2="1.45" y2="-0.8" width="0.05" layer="51"/>
+<wire x1="1.45" y1="-0.8" x2="1.45" y2="0.8" width="0.05" layer="51"/>
+<wire x1="1.45" y1="0.8" x2="-1.45" y2="0.8" width="0.05" layer="51"/>
+<wire x1="-1.45" y1="0.8" x2="-1.45" y2="-0.8" width="0.05" layer="51"/>
+<circle x="-1.15" y="-0.4" radius="0.1" width="0.05" layer="51"/>
+<smd name="P$1" x="-0.95" y="-1.1" dx="1.06" dy="0.65" layer="1" rot="R90"/>
+<smd name="P$2" x="0" y="-1.1" dx="1.06" dy="0.65" layer="1" rot="R90"/>
+<smd name="P$3" x="0.95" y="-1.1" dx="1.06" dy="0.65" layer="1" rot="R90"/>
+<smd name="P$4" x="0.95" y="1.1" dx="1.06" dy="0.65" layer="1" rot="R90"/>
+<smd name="P$5" x="0" y="1.1" dx="1.06" dy="0.65" layer="1" rot="R90"/>
+<smd name="P$6" x="-0.95" y="1.1" dx="1.06" dy="0.65" layer="1" rot="R90"/>
 </package>
 </packages>
 <symbols>
@@ -839,6 +852,19 @@
 <wire x1="15.24" y1="22.86" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
 <text x="-7.874" y="20.32" size="1.778" layer="94">Arduino Nano</text>
 </symbol>
+<symbol name="IQS228AS">
+<pin name="OUT/SCL/DATA" x="15.24" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="GND" x="-17.78" y="-2.54" length="middle" direction="pwr"/>
+<pin name="CTRL/SDA" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="VREG" x="-17.78" y="10.16" length="middle" direction="pwr"/>
+<pin name="VDDHI" x="-17.78" y="15.24" length="middle" direction="pwr"/>
+<pin name="CX" x="15.24" y="15.24" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="17.78" x2="-12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="17.78" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
+<text x="-6.604" y="5.842" size="1.778" layer="94">IQS228AS</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MTCH6301">
@@ -1201,6 +1227,32 @@ http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en559101</description
 <connect gate="G$1" pin="RESET@1" pad="3"/>
 <connect gate="G$1" pin="RESET@2" pad="28"/>
 <connect gate="G$1" pin="VIN" pad="30"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="IQS228AS">
+<description>&lt;h3&gt;IQS228AS - Single Channel Capacitive Proximity/Touch Sensor&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://www.azoteq.com/products/proxsense/3-products/products/139-products-proxsense-iqs228as.html"&gt;Product page&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.azoteq.com/images/stories/pdf/iqs228as_datasheet.pdf"&gt;Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="IQS228AS" x="2.54" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="TSOT23-6">
+<connects>
+<connect gate="G$1" pin="CTRL/SDA" pad="P$3"/>
+<connect gate="G$1" pin="CX" pad="P$6"/>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="OUT/SCL/DATA" pad="P$1"/>
+<connect gate="G$1" pin="VDDHI" pad="P$5"/>
+<connect gate="G$1" pin="VREG" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
