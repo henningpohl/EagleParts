@@ -21,6 +21,9 @@ Currently includes:
  - [Arduino Nano](http://arduino.cc/en/Main/ArduinoBoardNano) 
  - [NRF24AP2](http://www.nordicsemi.com/eng/Products/ANT/nRF24AP2-8CH)
  - [CC2541](http://www.ti.com/product/CC2541)
-- Batteries (talons-batteries.lbr)
- - Keystone 3012
- - Multicomp CH7410-2032LF
+- Power (talons-power.lbr)
+ - Batteries
+  - Keystone 3012
+  - Multicomp CH7410-2032LF
+ - Voltage Converters
+   - [LP2980](http://www.ti.com/product/lp2980-n)
