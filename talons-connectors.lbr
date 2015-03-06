@@ -115,6 +115,11 @@
 <hole x="2.54" y="1.016" drill="0.9906"/>
 <hole x="2.54" y="-1.016" drill="0.9906"/>
 </package>
+<package name="ALLIGATOR_CLIP_CONNECTOR">
+<pad name="P$1" x="-3.4" y="0" drill="4" diameter="5.5"/>
+<pad name="P$2" x="3.4" y="0" drill="4" diameter="5.5"/>
+<pad name="P$3" x="0" y="0" drill="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="J-LINK_6-PIN_ADAPTER">
@@ -149,6 +154,15 @@ Adapter</text>
 <text x="-5.08" y="20.828" size="1.778" layer="94" align="center">J-Link
 Needle
 Adapter</text>
+</symbol>
+<symbol name="ALLIGATOR_CLIP_CONNECTOR">
+<pin name="CLIP" x="-15.24" y="0" length="middle"/>
+<text x="-3.556" y="3.048" size="1.016" layer="94" align="center">Alligator Clip
+Connector</text>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -195,6 +209,24 @@ See &lt;a href="https://www.segger.com/jlink-6-pin-adapter.html"&gt;https://www.
 <connect gate="G$1" pin="SWDIO" pad="P$2"/>
 <connect gate="G$1" pin="SWO" pad="P$6"/>
 <connect gate="G$1" pin="VTREF" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ALLIGATOR_CLIP_CONNECTOR">
+<description>&lt;h1&gt;Alligator clip connector&lt;/h1&gt;
+
+You can attach an alligator clip to this connector by gripping it into the two holes. This is inspired by the design of the &lt;a href="https://www.adafruit.com/product/2024"&gt;Adafruit capacitive touch shield&lt;/a&gt;.</description>
+<gates>
+<gate name="G$1" symbol="ALLIGATOR_CLIP_CONNECTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ALLIGATOR_CLIP_CONNECTOR">
+<connects>
+<connect gate="G$1" pin="CLIP" pad="P$1 P$2 P$3"/>
 </connects>
 <technologies>
 <technology name=""/>
