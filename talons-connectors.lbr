@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -120,6 +120,36 @@
 <pad name="P$2" x="3.4" y="0" drill="4" diameter="5.5"/>
 <pad name="P$3" x="0" y="0" drill="1"/>
 </package>
+<package name="ISP-6PIN-PERMANENT">
+<pad name="P$1" x="-1.27" y="2.54" drill="1" shape="square"/>
+<pad name="P$2" x="1.27" y="2.54" drill="1"/>
+<pad name="P$3" x="-1.27" y="0" drill="1"/>
+<pad name="P$4" x="1.27" y="0" drill="1"/>
+<pad name="P$5" x="-1.27" y="-2.54" drill="1"/>
+<pad name="P$6" x="1.27" y="-2.54" drill="1"/>
+<text x="0.889" y="4.445" size="1.27" layer="21" align="center">ISP</text>
+<wire x1="-2.54" y1="5.715" x2="-2.54" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-3.81" x2="2.54" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-3.81" x2="2.54" y2="5.715" width="0.127" layer="21"/>
+<wire x1="2.54" y1="5.715" x2="-2.54" y2="5.715" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="6.35" x2="-3.175" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="-4.445" x2="3.175" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-4.445" x2="3.175" y2="6.35" width="0.127" layer="21"/>
+<wire x1="3.175" y1="6.35" x2="-3.175" y2="6.35" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="-1.27" y="3.81"/>
+<vertex x="-1.778" y="4.445"/>
+<vertex x="-0.762" y="4.445"/>
+</polygon>
+</package>
+<package name="ISP-6PIN-STAGGERED">
+<pad name="P$1" x="-1.397" y="2.54" drill="1" shape="square"/>
+<pad name="P$2" x="1.143" y="2.54" drill="1"/>
+<pad name="P$3" x="-1.143" y="0" drill="1"/>
+<pad name="P$4" x="1.397" y="0" drill="1"/>
+<pad name="P$5" x="-1.397" y="-2.54" drill="1"/>
+<pad name="P$6" x="1.143" y="-2.54" drill="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="J-LINK_6-PIN_ADAPTER">
@@ -163,6 +193,19 @@ Connector</text>
 <wire x1="-10.16" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-2.54" x2="2.54" y2="5.08" width="0.254" layer="94"/>
 <wire x1="2.54" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+</symbol>
+<symbol name="ISP-6PIN">
+<pin name="MISO" x="-12.7" y="5.08" length="middle"/>
+<pin name="VCC" x="-12.7" y="2.54" length="middle" direction="pwr"/>
+<pin name="SCK" x="-12.7" y="0" length="middle"/>
+<pin name="MOSI" x="-12.7" y="-2.54" length="middle"/>
+<pin name="RESET" x="-12.7" y="-5.08" length="middle"/>
+<pin name="GND" x="-12.7" y="-7.62" length="middle" direction="pwr"/>
+<text x="-1.016" y="8.128" size="1.524" layer="94" align="center">ISP-Header</text>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -227,6 +270,39 @@ You can attach an alligator clip to this connector by gripping it into the two h
 <device name="" package="ALLIGATOR_CLIP_CONNECTOR">
 <connects>
 <connect gate="G$1" pin="CLIP" pad="P$1 P$2 P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ISP-6-PIN">
+<gates>
+<gate name="G$1" symbol="ISP-6PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="PERMANENT" package="ISP-6PIN-PERMANENT">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$6"/>
+<connect gate="G$1" pin="MISO" pad="P$1"/>
+<connect gate="G$1" pin="MOSI" pad="P$4"/>
+<connect gate="G$1" pin="RESET" pad="P$5"/>
+<connect gate="G$1" pin="SCK" pad="P$3"/>
+<connect gate="G$1" pin="VCC" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="STAGGERED" package="ISP-6PIN-STAGGERED">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$6"/>
+<connect gate="G$1" pin="MISO" pad="P$1"/>
+<connect gate="G$1" pin="MOSI" pad="P$4"/>
+<connect gate="G$1" pin="RESET" pad="P$5"/>
+<connect gate="G$1" pin="SCK" pad="P$3"/>
+<connect gate="G$1" pin="VCC" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
