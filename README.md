@@ -17,6 +17,8 @@ Currently includes:
 - Actuation (talons-actuation.lbr)
  - [TI DRV8830](http://www.ti.com/product/drv8830)
  - [TI DRV777](http://www.ti.com/product/drv777)
+- Crystals and Resonators (talons-oscillation.lbr)
+ - [Murata CERALOCK series](www.murata.com/en-us/products/timingdevice/ceralock)
 - Microcontrollers (talons-microcontrollers.lbr)
  - [Arduino Nano](http://arduino.cc/en/Main/ArduinoBoardNano) 
  - [NRF24AP2](http://www.nordicsemi.com/eng/Products/ANT/nRF24AP2-8CH)
