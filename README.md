@@ -17,6 +17,7 @@ Currently includes:
 - Actuation (talons-actuation.lbr)
  - [TI DRV8830](http://www.ti.com/product/drv8830)
  - [TI DRV777](http://www.ti.com/product/drv777)
+ - [mp6-OEM](http://www.micro-components.com/index.php/products/controllers)
 - Connectors (talons-connectors.lbr)
  - [Molex 4-pin ZIF (vertical)](http://www.molex.com/molex/products/datasheet.jsp?part=active/0039532045_FFC_FPC_CONNECTORS.xml)
  - [Molex 4-pin ZIF (angled)](http://www.molex.com/molex/products/datasheet.jsp?part=active/0039532044_FFC_FPC_CONNECTORS.xml)
