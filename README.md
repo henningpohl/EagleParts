@@ -21,7 +21,9 @@ Currently includes:
  - [Murata CERALOCK series](www.murata.com/en-us/products/timingdevice/ceralock)
 - Microcontrollers (talons-microcontrollers.lbr)
  - [Arduino Nano](http://arduino.cc/en/Main/ArduinoBoardNano) 
+ - [ATMEGA328](http://www.atmel.com/devices/ATMEGA328.aspx) 
  - [NRF24AP2](http://www.nordicsemi.com/eng/Products/ANT/nRF24AP2-8CH)
+ - [NRF51882](http://www.nordicsemi.com/eng/Products/Bluetooth-R-low-energy/nRF51822)
  - [CC2541](http://www.ti.com/product/CC2541)
 - Power (talons-power.lbr)
  - Batteries
