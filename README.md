@@ -17,6 +17,13 @@ Currently includes:
 - Actuation (talons-actuation.lbr)
  - [TI DRV8830](http://www.ti.com/product/drv8830)
  - [TI DRV777](http://www.ti.com/product/drv777)
+- Connectors (talons-connectors.lbr)
+ - [Molex 4-pin ZIF (vertical)](http://www.molex.com/molex/products/datasheet.jsp?part=active/0039532045_FFC_FPC_CONNECTORS.xml)
+ - [Molex 4-pin ZIF (angled)](http://www.molex.com/molex/products/datasheet.jsp?part=active/0039532044_FFC_FPC_CONNECTORS.xml)
+ - Alligator clip connector
+ - ISP header (straight and staggered)
+ - [J-Link 6-pin](https://www.segger.com/jlink-6-pin-adapter.html)
+ - [J-Link Needle](https://www.segger.com/jlink-needle-adapter.html)
 - Crystals and Resonators (talons-oscillation.lbr)
  - [Murata CERALOCK series](www.murata.com/en-us/products/timingdevice/ceralock)
 - Microcontrollers (talons-microcontrollers.lbr)
