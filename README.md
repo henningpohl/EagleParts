@@ -39,3 +39,5 @@ Currently includes:
   - Multicomp CH7410-2032LF
  - Voltage Converters
    - [LP2980](http://www.ti.com/product/lp2980-n)
+- Miscellaneous
+ - [GTL2002](http://www.nxp.com/products/interface_and_connectivity/i2c/i2c_voltage_level_translators/series/GTL2002.html)
