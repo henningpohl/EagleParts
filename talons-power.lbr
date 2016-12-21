@@ -177,6 +177,17 @@
 <wire x1="0" y1="-7.112" x2="0" y2="-12.065" width="0.8128" layer="51"/>
 <wire x1="1.7018" y1="-7.112" x2="1.7018" y2="-12.065" width="0.8128" layer="51"/>
 </package>
+<package name="SOT-353">
+<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.127" layer="21"/>
+<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.127" layer="21"/>
+<smd name="P$1" x="-0.65" y="-1" dx="0.75" dy="0.35" layer="1" rot="R90"/>
+<smd name="P$2" x="0" y="-1" dx="0.75" dy="0.35" layer="1" rot="R90"/>
+<smd name="P$3" x="0.65" y="-1" dx="0.75" dy="0.35" layer="1" rot="R90"/>
+<smd name="P$4" x="0.65" y="1" dx="0.75" dy="0.35" layer="1" rot="R90"/>
+<smd name="P$5" x="-0.65" y="1" dx="0.75" dy="0.35" layer="1" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="BATTERY">
@@ -231,6 +242,17 @@
 <wire x1="7.62" y1="-10.16" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
 <text x="0" y="2.54" size="1.4224" layer="94" ratio="10" align="center">Murata OKR</text>
+</symbol>
+<symbol name="PSSI2021SAY">
+<pin name="IOUT" x="-15.24" y="0" visible="pin" length="middle" direction="out"/>
+<pin name="GND" x="-15.24" y="-2.54" visible="pin" length="middle" direction="pwr"/>
+<pin name="REXT" x="15.24" y="-2.54" visible="pin" length="middle" direction="pas" rot="R180"/>
+<pin name="VS" x="15.24" y="0" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<text x="0" y="3.048" size="1.778" layer="95" align="center">PSSI2021SAY</text>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -359,6 +381,31 @@
 <connect gate="G$1" pin="TRIM" pad="P$5"/>
 <connect gate="G$1" pin="VIN" pad="P$2"/>
 <connect gate="G$1" pin="VOUT" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PSSI2021SAY">
+<description>&lt;h1&gt;NXP PSSI2021SAY: Constant current source in SOT353 package&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://www.nxp.com/products/discretes-and-logic/bipolar-transistors/general-purpose-bipolar-transistors/constant-current-source/constant-current-source-in-sot353-package:PSSI2021SAY"&gt;Manufacturer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://octopart.com/search?q=pssi2021say"&gt;Octopart&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://de.farnell.com/nxp/pssi2021say-115/ic-current-source-50ma-75v-sot353/dp/1758034?ost=1758034&amp;categoryId=700000004321&amp;searchView=table&amp;iscrfnonsku=false"&gt;Farnell.de&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="PSSI2021SAY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-353">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$3"/>
+<connect gate="G$1" pin="IOUT" pad="P$2"/>
+<connect gate="G$1" pin="REXT" pad="P$4"/>
+<connect gate="G$1" pin="VS" pad="P$5"/>
 </connects>
 <technologies>
 <technology name=""/>
